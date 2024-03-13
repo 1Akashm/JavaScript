@@ -1,0 +1,134 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(201, 153, 246);
+}
+
+.container
+{
+    display: flex;
+    margin: 100px 0 0 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content{
+    background-color: rgb(31, 13, 44);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.display{
+    height: 80px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.display .output{
+    position: absolute;
+    right: 4%;
+    bottom: 2%;
+    font-size: 2rem;
+    font-weight: 300;
+    background: none;
+    color: white;
+    outline: none;
+    border: none;
+    width: 90%;
+    text-align: right;
+    height: 90px;
+    overflow-y: auto;
+}
+
+.first{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.second{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.third{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.fourth{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.fifth{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.num
+{
+
+    padding: 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 5px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    font-size: 1.15rem;
+    box-shadow: inset 1px -1px 10px 1px rgb(129, 39, 66),
+    inset 1px -1px 20px 10px rgb(57, 39, 129),
+    1px -1px 10px 1px rgb(79, 16, 35);
+    border-radius: 20px;
+}
+
+.equal{
+    width: 170px;
+}
+
+
+.op{
+    color: rgb(34, 207, 255);
+}
+
+
+
+@media screen and (max-width: 580px) {
+    .container{
+        margin: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 100%;
+        padding: 0;
+    }
+
+    .num
+    {
+        width: 20%;
+    }
+
+    .equal
+    {
+        width: 45%;
+    }
+}
+

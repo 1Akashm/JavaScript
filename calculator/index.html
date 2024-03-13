@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h2>Calculator</h2>
+        <h1>HTML,CSS and JavaScript</h1>
+      </div>
+
+      <div class="content">
+        <div class="display">
+          <input class="output" value="" name="display_result"/>
+        </div>
+
+        <div class="numbers">
+          <div class="first">
+            <input class="num op" onclick="clean()" type="button" value="AC" />
+            <input class="num op" type="button" value="DE" onclick="delet()" />
+
+            <input type="button" value="." class="num op" onclick="dot()" />
+            <input type="button" value="/" class="num op" onclick="divide()" />
+          </div>
+
+          <div class="second">
+            <input type="button" value="7" onclick="seven()" class="num" />
+            <input type="button" value="8" onclick="eight()" class="num" />
+            <input type="button" value="9" class="num" onclick="nine()" />
+            <input type="button" value="*" class="num op" onclick="mul()" />
+          </div>
+
+          <div class="third">
+            <input value="4" type="button" class="num" onclick="four()" />
+            <input value="5" type="button" class="num" onclick="five()" />
+            <input value="6" type="button" class="num" onclick="six()" />
+            <input value="-" type="button" class="num op" onclick="sub()" />
+          </div>
+
+          <div class="fourth">
+            <input value="1" type="button" class="num" onclick="one()" />
+            <input value="2" type="button" class="num" onclick="two()" />
+            <input type="button" value="3" class="num" onclick="three()" />
+            <input value="+" type="button" class="num op" onclick="add()" />
+          </div>
+
+          <div class="fifth">
+            <input
+              value="00"
+              type="button"
+              class="num"
+              onclick="double_zero()"
+            />
+            <input
+              value="0"
+              type="button"
+              class="num"
+              onclick="single_zero()"
+            />
+            <input class="equal num op" value="=" onclick="totaling()" readonly />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
